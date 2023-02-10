@@ -1,9 +1,17 @@
 import { useState } from "react";
+import backgroundImage from './assets/backgrounds/bg-clicktracker.jpg'
 
 const ClickTracker = () => {
   const [clicks, setClicks] = useState(0);
   const [lastClick, setLastClick] = useState(null);
   const [color, setColor] = useState("#F8F7FF");
+
+  const sectionStyles = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }
 
   const clicksTracker = () => {
     setClicks(clicks + 1);
@@ -19,7 +27,7 @@ const ClickTracker = () => {
 
   return (
     <>
-      <section id="clickTrackerSection">
+      <section id="clickTrackerSection" style={ sectionStyles}>
         <article id="clickTrackerPanel">
           <div id="panelHeader">
             <h2 id="panelHeaderTitle">Cantidad de clicks realizados</h2>

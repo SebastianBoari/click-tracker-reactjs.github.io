@@ -42,7 +42,6 @@ a {
 }
 
 #clickTrackerSection {
-  background-image: url(./src/assets/backgrounds/bg-clicktracker.jpg);
   height: calc(100vh - 120px);
   width: 100vw;
   background-position: center;
