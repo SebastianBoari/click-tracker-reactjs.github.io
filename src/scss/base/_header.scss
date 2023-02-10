@@ -1,0 +1,21 @@
+#header{
+    width: 100vw;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    background-color: #353535;
+    #clickTrackerIcon{
+        align-self: center;
+        justify-self: center;
+        max-width: 60px;
+    }
+    #clickTrackerTitle{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 3.2em;
+        color: #F8F7FF;
+        grid-column: 6/7;
+        align-self: center;
+        justify-self: center;
+        padding: 32px 0px 32px 32px;
+    }
+}
